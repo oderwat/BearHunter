@@ -4,9 +4,9 @@
 
 Lets you globally search for notes and use system wide hot-keys with the Bear notes taking application.
 
-## Available Hot-Keys
+## Hot-Key
 
-There is currently just one hot-key defined which brings Bear to the front, resets it's state and focus the search field. You need to assign the keys you like to this. I use CMD+ALT+B.
+There is currently just one hot-key defined. It brings Bear to the front, resets it's state and focus the search field. You need to assign the key you want to use inside of the workflow. I personally use `Command+Alt+b` for the key combination.
 
 ## The global Bear Notes Search
 
@@ -20,9 +20,11 @@ Remember that Bear stores its notes as raw markdown like text. Use this to your 
 
 ### Example 1:
 
-`red blue -green +apple`
+`red yellow -green +apple`
 
-Searches for ("red" or "yellow") and not "green" and "apple"
+Searches for all notes which containing the words "red" or "yellow" but not the word "green". And all of them must contain the word "apple".
+
+> (red `or` yellow) `and not` green `and` apple
 
 ### Example 2:
 
@@ -38,6 +40,6 @@ Searches for all Notes containing a jpeg, gif or png image.
 
 ### Example 4:
 
-    ```meta*saveas:*
+` ```meta*saveas:*`
 
-Searches for all Notes with a [BearNanny](https://github.com/oderwat/BearNanny) saved code block :)
+Searches for all notes with a [BearNanny](https://github.com/oderwat/BearNanny) saved code block :)
